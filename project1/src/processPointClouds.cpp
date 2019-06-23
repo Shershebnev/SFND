@@ -250,7 +250,6 @@ std::vector<typename pcl::PointCloud<PointT>::Ptr> ProcessPointClouds<PointT>::C
 				cluster->points.push_back(cloud->points[clustInd]);
 			}
 			clusters.push_back(cluster);
-			std::cout << "cluster size: " << v.size() << std::endl;
 		}
 	}
 
