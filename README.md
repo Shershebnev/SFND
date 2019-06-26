@@ -33,3 +33,18 @@ cmake ..
 make
 ./2D_feature_tracking
 ```
+
+project3 - Time-to-collision (TTC) calculation based on lidar and camera data  
+The goal of the project is to calculate the TTC using either lidar or camera data.
+Camera part is based on project2 for feature detection. Additionally cars are detected using YOLO.
+Lidar point cloud is first projected onto 2D image space. Bounding boxes from YOLO are used to decide which points are parts of the cars.
+
+To build and run:
+```
+cd project3
+mkdir build && cd build
+cmake ..
+make
+./3D_object_tracking
+```
+
