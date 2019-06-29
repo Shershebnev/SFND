@@ -48,3 +48,5 @@ make
 ./3D_object_tracking
 ```
 
+project4 - Radar target generation and detection  
+The goal of this project is to simulate the FMCW radar data with a "target" - a moving car, for instance. This data is then processed using FFT to get Range Doppler Map (RDM). In order to filter out the noise I’ve applied 2D CA-CFAR - 2D Cell Averaging Constant False Alarm Rate.
