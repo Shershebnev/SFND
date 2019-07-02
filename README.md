@@ -50,3 +50,15 @@ make
 
 project4 - Radar target generation and detection  
 The goal of this project is to simulate the FMCW radar data with a "target" - a moving car, for instance. This data is then processed using FFT to get Range Doppler Map (RDM). In order to filter out the noise I’ve applied 2D CA-CFAR - 2D Cell Averaging Constant False Alarm Rate.
+
+project5 - Unscented Kalman Filter  
+The goal of this project is to use Unscented Kalman Filter (UKF) to combine data from lidar and radar and predict the coordinates and speed of vehicles around ego car.
+
+To build and run:
+```
+cd project5
+mkdir build && cd build
+cmake ..
+make
+./ukf_highway
+```
